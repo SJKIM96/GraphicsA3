@@ -74,6 +74,7 @@ class tessel:
     def __vectorSpecular(self,S,N):
       n = N.transpose()
       temp = S *n
+      
       vS = -S+ 2* (S * N)/ pow(N.determinant(),2) * N
       return 0
     
